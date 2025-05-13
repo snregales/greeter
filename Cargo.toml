@@ -1,0 +1,10 @@
+[package]
+name = "greeter"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI application that displays current date, time, and system info."
+authors = ["Sharlon N. Regales"]
+
+[dependencies]
+chrono = "0.4"
+sysinfo = "0.29"
