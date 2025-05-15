@@ -41,7 +41,7 @@
       packages.default = package;
       devShells.default = pkgs.mkShell {
         inherit (pre-commit-check) shellHook;
-        buildInputs = pre-commit-check.enabledPackages;
+        buildInputs = pre-commit-check.enabledPackages ++ [pkgs.lazygit];
       };
       checks = {inherit pre-commit-check;};
 
